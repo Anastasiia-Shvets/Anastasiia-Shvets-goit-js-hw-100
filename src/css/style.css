@@ -27,13 +27,20 @@ input#datetime-picker {
     border-radius: 4px;
     width: 272px;
     height: 40px;
+    padding-left: 16px;
     margin-bottom: 32px;
     margin-right: 8px;
     border-color: #989898;
+    color: #2e2f42;
 }
 
 input#datetime-picker:active {
     border-color: #4e75ff;
+    color: #000;
+}
+
+input#datetime-picker:hover {
+border-color: #4e75ff;
 }
 
 input#datetime-picker:disabled {
@@ -117,6 +124,16 @@ input[type="number"] {
     
 }
 
+input[type="number"]:hover {
+    border-color: #4e75ff;
+    color: #000;
+}
+
+input[type="number"]:active {
+    border-color: #4e75ff;
+    color: #000;
+}
+
 fieldset {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -129,18 +146,15 @@ fieldset {
 legend {}
 
 input[type="radio"] {
-    border: 1px solid #757575;
-        border-radius: 14px;
-        width: 20px;
-        height: 20px;
+    border: 1px solid #898787;
+    border-radius: 14px;
+    width: 20px;
+    height: 20px;
 }
 
 input[type="radio"]:hover {
-    border: 1px solid #000;
-}
-
-input[type="radio"]:pressed {
-    border: 1px solid #4e75ff;
+    border-color: #4e75ff;
+    color: #000;
 }
 
 button[type="submit"] {
