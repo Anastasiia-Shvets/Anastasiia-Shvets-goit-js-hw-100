@@ -20,7 +20,7 @@
 
 body {
     font-family: 'Monserrat';
-    background-color: #d0efe6;
+    background-color: #fff;
 }
 
 input#datetime-picker {
@@ -29,6 +29,17 @@ input#datetime-picker {
     height: 40px;
     margin-bottom: 32px;
     margin-right: 8px;
+    border-color: #989898;
+}
+
+input#datetime-picker:active {
+    border-color: #4e75ff;
+}
+
+input#datetime-picker:disabled {
+    background-color: #fff;
+    color: #989898;
+    border-color: #cfcfcf;
 }
 
 button[data-start] {
@@ -37,7 +48,8 @@ button[data-start] {
     width: 75px;
     height: 40px;
     background: #4e75ff;
-    color: #fff
+    color: #fff;
+    border: none;
 }
 
 button[data-start]:hover {
@@ -81,4 +93,68 @@ button[data-start]:disabled {
     font-size: 16px;
     line-height: 1.5;
     color: #2e2f42;
+}
+
+
+
+.form {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+label {}
+
+input[type="number"] {
+    width: 360px;
+    height: 40px;
+    padding: 8px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    
+}
+
+fieldset {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 360px;
+    height: 64px;
+    border-radius: 4px;
+    stroke-width: 1px;
+}
+
+legend {}
+
+input[type="radio"] {
+    border: 1px solid #757575;
+        border-radius: 14px;
+        width: 20px;
+        height: 20px;
+}
+
+input[type="radio"]:hover {
+    border: 1px solid #000;
+}
+
+input[type="radio"]:pressed {
+    border: 1px solid #4e75ff;
+}
+
+button[type="submit"] {
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 360px;
+    height: 40px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
 }
