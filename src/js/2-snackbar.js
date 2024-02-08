@@ -23,8 +23,8 @@ formRef.addEventListener('submit', ev => {
     }
 
     const isActive = Math.random() > 0.5;
-    const promise = createPromise((delay, state === 'fulfilled'));
-    promise.then(onFullFiled, onRejected);
+    const promise = createPromise(delay, state === 'fulfilled');
+    promise.then(onFullFiled). catch(onRejected);
 
 
     function onFullFiled(delay) {
